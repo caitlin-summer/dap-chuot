@@ -5,95 +5,139 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Spelling Mole Adventure</title>
 <meta name="description" content="A fun whack-a-mole spelling game for kids: whack the mole holding the missing letter!">
-<meta name="theme-color" content="#ffd6e8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B9%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#fff1f8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='34' r='24' fill='%238a5a3c'/%3E%3Cellipse cx='32' cy='42' rx='12' ry='9' fill='%23ecd0ac'/%3E%3Ccircle cx='24' cy='30' r='4' fill='%23fff'/%3E%3Ccircle cx='40' cy='30' r='4' fill='%23fff'/%3E%3Ccircle cx='24' cy='31' r='2' fill='%231d1d2b'/%3E%3Ccircle cx='40' cy='31' r='2' fill='%231d1d2b'/%3E%3Cellipse cx='32' cy='38' rx='5' ry='3.5' fill='%233e2415'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>/* Tailwind 3.4.17, precompiled and minified */
-*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.-top-3\.5{top:-.875rem}.bottom-0{bottom:0}.bottom-2{bottom:.5rem}.left-1\/2{left:50%}.top-\[47\%\]{top:47%}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.my-2{margin-top:.5rem;margin-bottom:.5rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1/1}.h-4\/5{height:80%}.h-6{height:1.5rem}.h-\[22\%\]{height:22%}.h-\[26\%\]{height:26%}.h-dvh{height:100dvh}.h-full{height:100%}.max-h-\[96dvh\]{max-height:96dvh}.max-h-full{max-height:100%}.min-h-0{min-height:0}.w-4\/5{width:80%}.w-\[46\%\]{width:46%}.w-full{width:100%}.w-screen{width:100vw}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%,to{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)}}.animate-bounce{animation:bounce 1s infinite}.resize{resize:both}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.5rem*var(--tw-space-x-reverse));margin-left:calc(.5rem*(1 - var(--tw-space-x-reverse)))}.space-x-3>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.75rem*var(--tw-space-x-reverse));margin-left:calc(.75rem*(1 - var(--tw-space-x-reverse)))}.space-x-5>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.25rem*var(--tw-space-x-reverse));margin-left:calc(1.25rem*(1 - var(--tw-space-x-reverse)))}.space-y-0\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.125rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.125rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.border-2{border-width:2px}.border-4{border-width:4px}.border-8{border-width:8px}.border-\[3px\]{border-width:3px}.border-b-4{border-bottom-width:4px}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77/var(--tw-border-opacity,1))}.border-amber-400{--tw-border-opacity:1;border-color:rgb(251 191 36/var(--tw-border-opacity,1))}.border-pink-200{--tw-border-opacity:1;border-color:rgb(251 207 232/var(--tw-border-opacity,1))}.border-pink-300{--tw-border-opacity:1;border-color:rgb(249 168 212/var(--tw-border-opacity,1))}.border-pink-600{--tw-border-opacity:1;border-color:rgb(219 39 119/var(--tw-border-opacity,1))}.border-rose-300{--tw-border-opacity:1;border-color:rgb(253 164 175/var(--tw-border-opacity,1))}.border-teal-300{--tw-border-opacity:1;border-color:rgb(94 234 212/var(--tw-border-opacity,1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199/var(--tw-bg-opacity,1))}.bg-pink-50{--tw-bg-opacity:1;background-color:rgb(253 242 248/var(--tw-bg-opacity,1))}.bg-pink-950\/40{background-color:rgba(80,7,36,.4)}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230/var(--tw-bg-opacity,1))}.bg-teal-100{--tw-bg-opacity:1;background-color:rgb(204 251 241/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/90{background-color:hsla(0,0%,100%,.9)}.bg-white\/95{background-color:hsla(0,0%,100%,.95)}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-pink-400{--tw-gradient-from:#f472b6 var(--tw-gradient-from-position);--tw-gradient-to:rgba(244,114,182,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-rose-400{--tw-gradient-to:#fb7185 var(--tw-gradient-to-position)}.p-3{padding:.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.pb-4{padding-bottom:1rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.tracking-wider{letter-spacing:.05em}.tracking-widest{letter-spacing:.1em}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11/var(--tw-text-opacity,1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6/var(--tw-text-opacity,1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14/var(--tw-text-opacity,1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity,1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.text-pink-600{--tw-text-opacity:1;color:rgb(219 39 119/var(--tw-text-opacity,1))}.text-pink-700{--tw-text-opacity:1;color:rgb(190 24 93/var(--tw-text-opacity,1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94/var(--tw-text-opacity,1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57/var(--tw-text-opacity,1))}.text-teal-800{--tw-text-opacity:1;color:rgb(17 94 89/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-2xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-md{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-sm,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.drop-shadow-lg{--tw-drop-shadow:drop-shadow(0 10px 8px rgba(0,0,0,.04)) drop-shadow(0 4px 3px rgba(0,0,0,.1))}.drop-shadow-lg,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.focus\:border-pink-400:focus{--tw-border-opacity:1;border-color:rgb(244 114 182/var(--tw-border-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:translate-y-1:active{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width:640px){.sm\:flex{display:flex}.sm\:gap-5{gap:1.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:p-8{padding:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-sm{font-size:.875rem;line-height:1.25rem}}</style>
 <style>
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--ink:#4a3b5c;--ac:#ff7eb6;--ac2:#b794f6;--gold:#ffc46b;--mut:#9a8aa8;--line:#f3d9ea;--card:#fffafd}
+*{box-sizing:border-box;margin:0;user-select:none;-webkit-user-select:none}
+html,body{height:100%}
+body{font-family:'Fredoka',system-ui,sans-serif;color:var(--ink);
+ background:
+  radial-gradient(circle at 12% 18%,#ffd6ea88 0 90px,transparent 91px),
+  radial-gradient(circle at 88% 12%,#d9ccff88 0 110px,transparent 111px),
+  radial-gradient(circle at 80% 85%,#c6f1ff88 0 100px,transparent 101px),
+  linear-gradient(180deg,#fff1f8 0%,#f1ecff 55%,#e6f6ff 100%);
+ touch-action:manipulation;overflow:hidden;height:100dvh;display:flex;flex-direction:column;align-items:center;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 48 48'><path d='M14 28 L32 46 L38 40 L20 22 Z' fill='%23e8c79a' stroke='%23ffffff' stroke-width='2'/><rect x='6' y='8' width='24' height='14' rx='7' transform='rotate(-25 18 15)' fill='%23ff7eb6' stroke='%23ffffff' stroke-width='2.5'/></svg>") 8 8,auto}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box;user-select:none;-webkit-user-select:none}
-body{font-family:'Fredoka',system-ui,sans-serif;background:linear-gradient(180deg,#ffd6e8 0%,#c4f4fe 100%);touch-action:manipulation;
-cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path d='M14 28 L32 46 L38 40 L20 22 Z' fill='%23ffb3ba' stroke='%23ffffff' stroke-width='2'/><rect x='6' y='8' width='24' height='14' rx='6' transform='rotate(-25 18 15)' fill='%23ff6b8b' stroke='%23ffffff' stroke-width='2.5'/></svg>") 12 12,auto}
-.hole-container{overflow:hidden}
-input{user-select:text;-webkit-user-select:text}
-.mode-btn{flex:1;padding:.5rem 0;border-radius:1rem;border:4px solid #fbcfe8;background:#fff;color:#ec4899;font-weight:900;font-size:1.1rem}
-.mode-btn.sel{background:#f472b6;border-color:#db2777;color:#fff}
-.hole-container .mole-wrapper{transition:transform .28s cubic-bezier(.34,1.56,.64,1);transform:translateY(115%);cursor:inherit}
+.hidden{display:none!important}
+.sr{display:none}
+.w-full{width:100%}.h-full{height:100%}
+.bar{width:100%;max-width:1400px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 24px 6px}
+.stat{background:var(--card);border:3px solid #fff;box-shadow:0 3px 0 #f3d9ea;border-radius:999px;padding:3px 14px;font-weight:700;font-size:1.2rem;white-space:nowrap;color:var(--ink)}
+.combo{font-size:.85rem;color:#ff8a3d;margin-left:6px}
+.icon-btn{background:var(--card);border:3px solid #fff;box-shadow:0 3px 0 #f3d9ea;border-radius:50%;width:38px;height:38px;font-size:1rem;padding:0;display:flex;align-items:center;justify-content:center;cursor:inherit}
+.icon-btn.arm{background:var(--ac)}
+.icon-btn.arm svg path{stroke:#fff}
+.icon-btn:active{transform:translateY(3px);box-shadow:0 1px 0 #f3d9ea}
+#effects{display:flex;gap:6px;height:22px;margin:2px 0;font-size:.75rem;font-weight:700;white-space:nowrap}
+.chip{padding:1px 10px;border-radius:999px}
+#targetCard{position:relative;width:calc(100% - 48px);max-width:720px;background:var(--card);border:3px solid #fff;box-shadow:0 4px 0 #f3d9ea;border-radius:28px;padding:8px 24px;display:flex;align-items:center;justify-content:center;gap:16px}
+#hintEmoji{flex:none;width:64px;height:64px;background:#fdeef6;border:0;border-radius:50%;padding:9px}
+#hintEmoji svg{width:100%;height:100%}
+#wordDisplay{font-size:2.6rem;font-weight:700;letter-spacing:.2em;line-height:1.2;background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+section{flex:1;min-height:0;width:100%;max-width:1400px;padding:14px 28px 22px;display:flex;align-items:stretch}
+#gridContainer{display:grid;grid-template-columns:repeat(var(--c,5),minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:12px;width:100%;min-height:0}
+.hole-container{container-type:size;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;width:100%;height:100%;border-radius:28px}
+.pit{position:absolute;bottom:0;width:100%;height:80%}
+.pit svg,.grass svg{width:100%;height:100%}
+.grass{position:absolute;bottom:0;width:100%;height:22%;pointer-events:none;z-index:20}
+.mole-wrapper{position:absolute;bottom:8px;left:0;right:0;margin:0 auto;width:min(80cqw,calc(80cqh*.909));height:min(80cqh,calc(80cqw*1.1));display:flex;align-items:flex-end;justify-content:center;transition:transform .2s cubic-bezier(.34,1.56,.64,1);transform:translateY(115%);cursor:inherit}
 .hole-container.up .mole-wrapper{transform:translateY(0)}
-.mole-wrapper.hit{transform:translateY(20%) scale(.9,.7)!important;transition:transform .1s ease-in}
-@keyframes floatUp{0%{opacity:1;transform:translateY(0) scale(1) rotate(-4deg)}50%{transform:translateY(-35px) scale(1.25) rotate(4deg)}100%{opacity:0;transform:translateY(-70px) scale(1.3)}}
-.float-text{animation:floatUp .85s forwards;pointer-events:none}
-@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-10px) rotate(-3deg)}40%,80%{transform:translateX(10px) rotate(3deg)}}
+.mole-wrapper.hit{transform:translateY(20%) scale(.9,.7)!important;transition:transform .08s ease-in}
+.mw-in{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.art{width:100%;height:100%}
+.badge{position:absolute;left:50%;top:50%;width:40%;aspect-ratio:1;transform:translateX(-50%);background:#fff;border:4px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 0 #f3d9ea,0 0 0 3px var(--gold)}
+.float-text{position:fixed;z-index:50;font-weight:700;font-size:1.4rem;text-shadow:0 2px 0 #fff,0 0 8px #fff;pointer-events:none;animation:floatUp .85s forwards}
+@media(max-width:600px){.bar{padding:10px 14px 4px}.stat{font-size:1.15rem;padding:4px 12px}#wordDisplay{font-size:2rem}#hintEmoji{width:52px;height:52px;padding:7px}section{padding:10px 14px 16px}#gridContainer{gap:8px;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(var(--c,5),minmax(0,1fr))}}
+.ic{width:1em;height:1em;vertical-align:-.15em;flex:none}
+.stat{display:flex;align-items:center;gap:6px}.stat .ic{width:1.1em;height:1.1em}
+.combo{display:inline-flex;align-items:center;gap:2px}
+.chip{display:inline-flex;align-items:center;gap:4px}
+.float-text{display:flex;align-items:center;gap:4px;white-space:nowrap}
+.row span:first-child{display:flex;align-items:center;gap:6px}
+.muted{display:flex;justify-content:center;flex-wrap:wrap;gap:2px 10px}
+.lg{display:inline-flex;align-items:center;gap:3px}
+.mole-char{display:flex;color:var(--ac)}
+@keyframes floatUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-45px)}}
+@keyframes shake{0%,100%{transform:translateX(0)}30%,70%{transform:translateX(-4px)}50%{transform:translateX(4px)}}
 .animate-shake{animation:shake .4s ease-in-out}
+#gameModal{position:fixed;inset:0;z-index:50;background:#4a3b5c66;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:16px}
+.panel{background:var(--card);border:5px solid #fff;box-shadow:0 8px 0 #f3d9ea,0 24px 50px #b794f655;border-radius:36px;padding:22px 26px;width:100%;max-width:420px;text-align:center;max-height:96dvh;overflow:auto}
+#modalTitle{font-size:1.6rem;font-weight:700;background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+#modalDesc{font-size:.9rem;color:var(--mut);margin:2px 0 10px}
+#finalStats{display:flex;justify-content:space-around;background:linear-gradient(135deg,#ffe8f3,#ece4ff);border-radius:22px;padding:8px;margin-bottom:10px}
+#finalStats div{display:flex;flex-direction:column;font-size:.75rem;color:var(--mut)}
+#finalStats b{font-size:1.3rem;color:var(--ac)}
+#playerName{width:100%;padding:9px 12px;background:#fff;border:3px solid var(--line);border-radius:999px;text-align:center;font-size:1.1rem;font-weight:600;color:var(--ink);outline:none;font-family:inherit;user-select:text;-webkit-user-select:text}
+#playerName:focus{border-color:var(--ac2);box-shadow:0 0 0 4px #b794f633}
+.modes{display:flex;gap:8px;margin:8px 0}
+.mode-btn{flex:1;padding:7px 0;border-radius:999px;border:3px solid var(--line);background:#fff;color:var(--mut);font-weight:700;font-size:1rem;font-family:inherit;cursor:inherit}
+.mode-btn.sel{background:linear-gradient(135deg,var(--ac),var(--ac2));border-color:#fff;color:#fff;box-shadow:0 3px 0 #d96aa4}
+#board{list-style:none;padding:6px 12px;background:#fff4fa;border:3px dashed var(--line);border-radius:20px;margin-bottom:8px;font-size:.85rem;font-weight:600;text-align:left}
+.row{display:flex;justify-content:space-between;padding:1px 4px;border-radius:8px}
+.row.hi{background:#fff0c9;color:#d9822b}
+.empty{text-align:center;color:#b9a8c4}
+.muted{font-size:.75rem;color:var(--mut);margin-bottom:10px}
+.play{width:100%;border:4px solid #fff;border-radius:999px;padding:10px;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;font-size:1.3rem;font-weight:700;font-family:inherit;letter-spacing:.08em;box-shadow:0 6px 0 #d96aa4,0 12px 20px #ff7eb655;cursor:inherit}
+.play:active{transform:translateY(4px);box-shadow:0 2px 0 #d96aa4}
+#frostFx,#particleCanvas{position:fixed;inset:0;pointer-events:none}
+#frostFx{z-index:30}#particleCanvas{z-index:40}
 </style>
 </head>
-<body class="h-dvh w-screen overflow-hidden flex flex-col justify-between items-center relative">
-
-<header class="w-full max-w-4xl px-4 pt-4 z-10">
- <div class="bg-white/95 rounded-full px-4 sm:px-6 py-3 shadow-xl border-4 border-pink-200 flex justify-between items-center text-gray-700">
-  <div class="flex items-center space-x-3">
-   <div class="bg-amber-100 px-4 py-1.5 rounded-full border-2 border-amber-300 font-extrabold text-amber-800">⭐ SCORE: <span id="score" class="text-2xl text-amber-500 font-black">0</span></div>
-   <div id="comboBadge" class="hidden bg-gradient-to-r from-pink-400 to-rose-400 text-white text-xs px-3 py-1.5 rounded-full animate-bounce font-extrabold border-2 border-white">🔥<span id="comboCount">2</span> <span id="comboMult">x1</span></div>
-  </div>
-  <div class="hidden sm:flex items-center space-x-2 bg-teal-100 px-4 py-1.5 rounded-full border-2 border-teal-300">
-   <span id="categoryIcon" class="text-xl">🐾</span><span id="categoryName" class="text-teal-800 text-xs font-extrabold tracking-wider">CUTE ANIMALS</span>
-  </div>
-  <div class="bg-rose-100 px-4 py-1.5 rounded-full border-2 border-rose-300 font-extrabold text-rose-800">⏰ <span id="timer" class="text-2xl text-rose-500 font-black">30</span>s</div>
- </div>
+<body>
+<header class="bar">
+ <div class="stat"><i data-ic="star"></i><span id="score">0</span><span id="comboBadge" class="combo hidden"><i data-ic="fire"></i><span id="comboCount">2</span> <span id="comboMult">x1</span></span></div>
+ <div style="display:flex;gap:8px;align-items:center"><div class="stat"><i data-ic="clock"></i><span id="timer">30</span>s</div><button id="soundToggle" class="icon-btn" onclick="toggleSound()" title="Sound"><span id="soundIcon"><i data-ic="volOn"></i></span><span id="soundLabel" class="sr">Sound ON</span></button><button id="quitBtn" class="icon-btn" onclick="quitGame()" title="Quit"><i data-ic="exit"></i></button></div>
 </header>
-<div id="effects" class="flex justify-center gap-2 h-6 z-10 text-xs font-black whitespace-nowrap"></div>
-
-<main class="w-full max-w-lg px-4 my-2 z-10 flex flex-col items-center">
- <div id="targetCard" class="bg-white/95 border-4 border-pink-300 rounded-3xl p-4 shadow-2xl w-full flex items-center justify-center relative">
-  <div class="absolute -top-3.5 bg-gradient-to-r from-pink-400 to-rose-400 text-white text-xs font-black px-5 py-1 rounded-full border-2 border-white shadow-md uppercase tracking-wider">✨ Whack the mole with the missing letter! ✨</div>
-  <div class="flex items-center space-x-5 mt-2">
-   <button id="hintEmoji" class="text-5xl md:text-6xl bg-pink-50 p-3 rounded-2xl border-2 border-pink-200 shadow-sm" title="Hear the word" onclick="speakCurrentWord()">🐱</button>
-   <div class="flex flex-col items-start">
-    <div id="wordDisplay" class="text-4xl md:text-5xl font-black text-pink-600 tracking-widest">C _ T</div>
-    <div id="phoneticHint" class="text-xs md:text-sm font-bold text-gray-500 mt-1">Hint</div>
-   </div>
-  </div>
+<div id="effects"></div>
+<main id="targetCard">
+ <div id="hintEmoji"></div>
+ <div>
+  <div id="wordDisplay">C _ T</div>
  </div>
 </main>
-
-<section class="w-full max-w-xl px-4 mb-4 z-10 flex-1 min-h-0 flex items-center justify-center">
- <div class="grid grid-cols-3 gap-3 sm:gap-5 w-full max-w-lg aspect-square max-h-full" id="gridContainer"></div>
-</section>
-
-<footer class="w-full max-w-xl px-4 pb-4 z-10 flex justify-between items-center text-xs font-extrabold text-gray-600">
- <button id="soundToggle" onclick="toggleSound()" class="bg-white/90 px-4 py-2 rounded-full border-2 border-pink-200 shadow-md"><span id="soundIcon">🔊</span> <span id="soundLabel">Sound ON</span></button>
- <div class="bg-white/90 px-4 py-2 rounded-full border-2 border-pink-200 shadow-md">Tap the mole with the missing letter! 💖</div>
-</footer>
-
-<div id="gameModal" class="fixed inset-0 bg-pink-950/40 z-50 flex justify-center items-center p-4">
- <div class="bg-white border-8 border-pink-300 rounded-3xl p-6 md:p-8 text-center max-w-md w-full shadow-2xl max-h-[96dvh] overflow-y-auto">
-  <div class="text-6xl mb-2">🏆</div>
-  <h2 id="modalTitle" class="text-3xl md:text-4xl font-black text-pink-600 mb-2">Mole Spelling!</h2>
-  <p id="modalDesc" class="text-gray-600 font-extrabold mb-6">Whack the mole carrying the missing letter to finish each word!</p>
-  <div id="finalStats" class="hidden mb-6 bg-pink-50 p-4 rounded-2xl border-2 border-pink-200 space-y-2 text-left">
-   <div class="flex justify-between text-lg font-black text-pink-700"><span>Final Score:</span><span id="modalScore" class="text-2xl text-amber-500">0</span></div>
-   <div class="flex justify-between font-bold text-sm text-gray-600"><span>Words Completed:</span><span id="modalWords" class="text-pink-600">0</span></div>
-   <div class="flex justify-between font-bold text-sm text-gray-600"><span>Accuracy:</span><span id="modalAccuracy" class="text-pink-600">100%</span></div>
-  </div>
-  <div class="text-xs font-bold text-gray-500 mb-3">⭐ x2 points · ❄️ freeze time · 🐢 slow-mo · 🦇 BAD: -10 &amp; fast!</div>
-  <input id="playerName" maxlength="14" autocomplete="off" placeholder="Your name ✏️" class="w-full mb-3 px-4 py-3 rounded-2xl border-4 border-pink-200 text-center text-xl font-bold text-pink-700 focus:outline-none focus:border-pink-400">
-  <div class="text-xs font-extrabold text-gray-500 mb-1">Choose game time</div>
-  <div class="flex gap-2 mb-2"><button class="mode-btn" data-t="30">30s</button><button class="mode-btn" data-t="45">45s</button><button class="mode-btn" data-t="60">60s</button></div>
-  <div class="text-xs font-extrabold text-gray-500 mb-1">🏆 Top 5</div>
-  <ol id="board" class="mb-4 text-left bg-pink-50 border-2 border-pink-200 rounded-2xl px-3 py-2 text-sm font-bold text-pink-700 space-y-0.5"></ol>
-  <button onclick="startGame()" class="w-full bg-gradient-to-r from-pink-400 to-rose-400 text-white font-black text-2xl py-3.5 rounded-2xl shadow-xl border-b-4 border-pink-600 active:translate-y-1">PLAY NOW! ✨</button>
+<section><div id="gridContainer"></div></section>
+<div id="gameModal"><div class="panel">
+ <h2 id="modalTitle">Mole Spelling</h2>
+ <p id="modalDesc">Whack the mole with the missing letter!</p>
+ <div id="finalStats" class="hidden">
+  <div><span>Score</span><b id="modalScore">0</b></div>
+  <div><span>Words</span><b id="modalWords">0</b></div>
+  <div><span>Accuracy</span><b id="modalAccuracy">100%</b></div>
  </div>
-</div>
-
-<div id="frostFx" class="fixed inset-0 pointer-events-none z-30" style="opacity:0;transition:opacity .3s;box-shadow:inset 0 0 90px 24px rgba(125,211,252,.85);background:radial-gradient(circle,rgba(186,230,253,0) 45%,rgba(125,211,252,.35) 100%)"></div>
-<canvas id="particleCanvas" class="fixed inset-0 pointer-events-none z-40"></canvas>
-
+ <input id="playerName" maxlength="14" autocomplete="off" placeholder="Your name">
+ <div class="modes"><button class="mode-btn" data-l="easy">Easy 3×3</button><button class="mode-btn" data-l="medium">Medium 3×4</button><button class="mode-btn" data-l="hard">Hard 3×5</button></div>
+ <div class="modes"><button class="mode-btn" data-t="30">30s</button><button class="mode-btn" data-t="45">45s</button><button class="mode-btn" data-t="60">60s</button></div>
+ <ol id="board"></ol>
+ <p class="muted"><span class="lg"><i data-ic="star"></i>x2 points</span><span class="lg"><i data-ic="snow"></i>freeze</span><span class="lg"><i data-ic="turtle"></i>slow</span><span class="lg"><i data-ic="bat"></i>-10, fast</span></p>
+ <button class="play" onclick="startGame()">PLAY</button>
+</div></div>
+<div id="frostFx" style="opacity:0;transition:opacity .3s;box-shadow:inset 0 0 90px 24px rgba(125,211,252,.85);background:radial-gradient(circle,rgba(186,230,253,0) 45%,rgba(125,211,252,.35) 100%)"></div>
+<canvas id="particleCanvas"></canvas>
 <script>
+
+// Inline SVG icon set (no emoji anywhere in the UI)
+const medal=c=>`<circle cx='12' cy='14' r='7' fill='${c}'/><path d='M8 2l4 7 4-7z' fill='#ef4444'/><circle cx='12' cy='14' r='3' fill='#fff' fill-opacity='.45'/>`;
+const IC={
+ star:`<path d='M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z' fill='#fbbf24' stroke='#f59e0b' stroke-width='1.2' stroke-linejoin='round'/>`,
+ clock:`<circle cx='12' cy='13' r='8.5' fill='#fff' stroke='#b794f6' stroke-width='2.2'/><path d='M12 8.5V13l3 2' stroke='#b794f6' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M9.5 2.5h5' stroke='#b794f6' stroke-width='2.2' stroke-linecap='round'/>`,
+ volOn:`<path d='M3 9.5h4l5-4.5v14l-5-4.5H3z' fill='#b794f6'/><path d='M15.5 8.5Q18 12 15.5 15.5M18.5 5.5Q23 12 18.5 18.5' stroke='#b794f6' stroke-width='2' fill='none' stroke-linecap='round'/>`,
+ volOff:`<path d='M3 9.5h4l5-4.5v14l-5-4.5H3z' fill='#cbbfd6'/><path d='M16 9l6 6M22 9l-6 6' stroke='#cbbfd6' stroke-width='2' stroke-linecap='round'/>`,
+ fire:`<path d='M12 2Q14 7 18 10 21 13 19 17 17 22 12 22 7 22 5 17 4 13 7 10 7 12 9 12 8 7 12 2Z' fill='#f97316'/><path d='M12 21Q8.5 21 9 17.5 9.5 15 12 13 14.5 15 15 17.5 15.5 21 12 21Z' fill='#fde047'/>`,
+ snow:`<g stroke='#38bdf8' stroke-width='2.2' stroke-linecap='round'><path d='M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7'/></g><circle cx='12' cy='12' r='2.5' fill='#e0f2fe'/>`,
+ turtle:`<ellipse cx='11' cy='14' rx='8' ry='6' fill='#22c55e'/><circle cx='21' cy='13' r='3' fill='#16a34a'/><path d='M7 14h8M11 8.5v11' stroke='#15803d' stroke-width='1.2'/><rect x='5' y='18' width='3' height='3' rx='1' fill='#16a34a'/><rect x='13' y='18' width='3' height='3' rx='1' fill='#16a34a'/>`,
+ bolt:`<path d='M13 2 4 14h6l-1 8 10-13h-6z' fill='#8b5cf6'/>`,
+ bat:`<path d='M12 7Q8 3 2 5 4 9 3 13 6 11 8 13 9 16 12 14 15 16 16 13 18 11 21 13 20 9 22 5 16 3 12 7Z' fill='#7c3aed'/><circle cx='10' cy='9' r='1' fill='#fff'/><circle cx='14' cy='9' r='1' fill='#fff'/>`,
+ sparkle:`<path d='M12 2Q13 9 20 12 13 15 12 22 11 15 4 12 11 9 12 2Z' fill='#fbbf24'/>`,
+ heart:`<path d='M12 21S3 14.5 3 8.5A4.5 4.5 0 0 1 12 6.5 4.5 4.5 0 0 1 21 8.5C21 14.5 12 21 12 21Z' fill='#f43f5e'/><path d='M12 6.5 10.5 11l3 2-1.5 3' stroke='#fff' stroke-width='1.6' fill='none' stroke-linejoin='round'/>`,
+ exit:`<path d='M6 6l12 12M18 6L6 18' stroke='#ff7eb6' stroke-width='3' stroke-linecap='round'/>`,
+ m1:medal('#fbbf24'), m2:medal('#cbd5e1'), m3:medal('#d97706')
+};
+const ic=n=>`<svg class='ic' viewBox='0 0 24 24'>${IC[n]}</svg>`;
+document.querySelectorAll('[data-ic]').forEach(e=>e.innerHTML=ic(e.dataset.ic));
 // Distractors are chosen so that no wrong letter forms a real word (e.g. D_G never offers I or U).
 const vocabDatabase = [
  {word:"CAT",display:"C _ T",missing:"A",emoji:"🐱",category:"Cute Animals",icon:"🐾",hint:"A furry pet that meows",d:["E","I","M","Z"]},
@@ -134,6 +178,47 @@ const vocabDatabase = [
  {word:"CAR",display:"C _ R",missing:"A",emoji:"🚗",category:"Everyday Things",icon:"🏠",hint:"Drives on the road",d:["B","K","M","Z"]}
 ];
 
+// Flat SVG icons for each word (replace emoji)
+const S=b=>`<svg viewBox='0 0 64 64'>${b}</svg>`;
+const ICONS={
+CAT:S(`<path d='M14 30 14 8 28 18Q32 17 36 18L50 8 50 30Q50 54 32 54 14 54 14 30Z' fill='#f59e0b'/><path d='M18 14 24 19 18 25ZM46 14 40 19 46 25Z' fill='#fcd9a0'/><circle cx='24' cy='32' r='3.2' fill='#1e293b'/><circle cx='40' cy='32' r='3.2' fill='#1e293b'/><path d='M29 39h6l-3 3Z' fill='#f87171'/><path d='M32 42Q28 47 24 44M32 42Q36 47 40 44' stroke='#1e293b' stroke-width='1.8' fill='none' stroke-linecap='round'/><path d='M6 38l12 2M6 44l12-2M58 38 46 40M58 44 46 42' stroke='#92400e' stroke-width='1.5' stroke-linecap='round'/>`),
+DOG:S(`<ellipse cx='32' cy='36' rx='18' ry='19' fill='#d6a76b'/><path d='M12 20Q4 38 14 48Q20 40 18 22Z' fill='#7c4a21'/><path d='M52 20Q60 38 50 48Q44 40 46 22Z' fill='#7c4a21'/><ellipse cx='32' cy='44' rx='10' ry='8' fill='#f5e1c0'/><circle cx='25' cy='32' r='3' fill='#1e293b'/><circle cx='39' cy='32' r='3' fill='#1e293b'/><ellipse cx='32' cy='40' rx='4' ry='3' fill='#1e293b'/><path d='M32 43v4M27 48Q32 52 37 48' stroke='#1e293b' stroke-width='1.8' fill='none' stroke-linecap='round'/>`),
+BED:S(`<rect x='6' y='16' width='6' height='38' rx='2' fill='#92400e'/><rect x='52' y='24' width='6' height='30' rx='2' fill='#92400e'/><rect x='8' y='32' width='48' height='14' rx='3' fill='#6366f1'/><rect x='14' y='22' width='16' height='11' rx='5' fill='#e0e7ff'/><rect x='8' y='38' width='48' height='8' rx='2' fill='#818cf8'/>`),
+SUN:S(`<g stroke='#f59e0b' stroke-width='4' stroke-linecap='round'><path d='M32 6v8M32 50v8M6 32h8M50 32h8M14 14l6 6M44 44l6 6M14 50l6-6M44 20l6-6'/></g><circle cx='32' cy='32' r='13' fill='#fbbf24'/>`),
+FOX:S(`<path d='M8 10 24 20Q32 18 40 20L56 10 54 34Q48 56 32 56 16 56 10 34Z' fill='#f97316'/><path d='M14 24Q24 28 32 46 40 28 50 24 46 50 32 56 18 50 14 24Z' fill='#fff7ed'/><circle cx='23' cy='33' r='3' fill='#1e293b'/><circle cx='41' cy='33' r='3' fill='#1e293b'/><ellipse cx='32' cy='49' rx='3.5' ry='2.5' fill='#1e293b'/>`),
+PIG:S(`<circle cx='14' cy='16' r='8' fill='#f9a8d4'/><circle cx='50' cy='16' r='8' fill='#f9a8d4'/><circle cx='32' cy='34' r='22' fill='#f9a8d4'/><ellipse cx='32' cy='41' rx='10' ry='7.5' fill='#f472b6'/><circle cx='28' cy='41' r='1.8' fill='#9d174d'/><circle cx='36' cy='41' r='1.8' fill='#9d174d'/><circle cx='23' cy='29' r='3' fill='#1e293b'/><circle cx='41' cy='29' r='3' fill='#1e293b'/>`),
+HAT:S(`<rect x='20' y='10' width='24' height='32' rx='3' fill='#1e293b'/><rect x='20' y='32' width='24' height='6' fill='#ef4444'/><rect x='8' y='40' width='48' height='8' rx='4' fill='#334155'/>`),
+PEN:S(`<g transform='rotate(45 32 32)'><rect x='27' y='6' width='10' height='38' rx='2' fill='#3b82f6'/><rect x='27' y='6' width='10' height='8' rx='2' fill='#1d4ed8'/><path d='M27 44h10l-5 14Z' fill='#fcd9a0'/><path d='M30 52h4l-2 6Z' fill='#1e293b'/></g>`),
+BUS:S(`<rect x='6' y='12' width='52' height='36' rx='7' fill='#f59e0b'/><rect x='11' y='18' width='12' height='12' rx='2' fill='#e0f2fe'/><rect x='26' y='18' width='12' height='12' rx='2' fill='#e0f2fe'/><rect x='41' y='18' width='12' height='12' rx='2' fill='#e0f2fe'/><rect x='6' y='34' width='52' height='4' fill='#b45309'/><circle cx='18' cy='50' r='6' fill='#1e293b'/><circle cx='46' cy='50' r='6' fill='#1e293b'/><circle cx='18' cy='50' r='2.5' fill='#cbd5e1'/><circle cx='46' cy='50' r='2.5' fill='#cbd5e1'/>`),
+APPLE:S(`<path d='M32 20Q18 12 11 26 6 44 20 56Q26 58 32 55 38 58 44 56 58 44 53 26 46 12 32 20Z' fill='#ef4444'/><path d='M32 20Q31 12 36 6' stroke='#78350f' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M36 14Q46 6 52 12 44 18 36 14Z' fill='#22c55e'/><path d='M18 28Q16 36 20 42' stroke='#fff' stroke-opacity='.45' stroke-width='3' fill='none' stroke-linecap='round'/>`),
+DUCK:S(`<ellipse cx='36' cy='42' rx='22' ry='14' fill='#fde047'/><circle cx='26' cy='24' r='13' fill='#fde047'/><path d='M14 24l-9 4 9 4Z' fill='#fb923c'/><circle cx='24' cy='21' r='2.8' fill='#1e293b'/><path d='M34 42Q44 46 54 36' stroke='#eab308' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M4 57Q16 51 28 57 40 62 60 55' stroke='#38bdf8' stroke-width='3' fill='none' stroke-linecap='round'/>`),
+FISH:S(`<path d='M6 32Q22 10 42 24L58 12V52L42 40Q22 54 6 32Z' fill='#38bdf8'/><path d='M42 24Q50 32 42 40' stroke='#0284c7' stroke-width='2.5' fill='none'/><circle cx='18' cy='29' r='3.4' fill='#fff'/><circle cx='18' cy='29' r='1.6' fill='#1e293b'/><path d='M28 30Q31 33 28 36' stroke='#0284c7' stroke-width='2.5' fill='none'/>`),
+MILK:S(`<rect x='16' y='22' width='32' height='36' rx='2' fill='#fff' stroke='#cbd5e1' stroke-width='2'/><path d='M16 22 32 6 48 22Z' fill='#60a5fa'/><rect x='17' y='34' width='30' height='13' fill='#60a5fa'/><circle cx='32' cy='40' r='4' fill='#fff'/>`),
+FROG:S(`<circle cx='18' cy='18' r='9' fill='#4ade80'/><circle cx='46' cy='18' r='9' fill='#4ade80'/><ellipse cx='32' cy='38' rx='24' ry='19' fill='#4ade80'/><circle cx='18' cy='18' r='5' fill='#fff'/><circle cx='46' cy='18' r='5' fill='#fff'/><circle cx='18' cy='19' r='2.5' fill='#1e293b'/><circle cx='46' cy='19' r='2.5' fill='#1e293b'/><path d='M18 42Q32 54 46 42' stroke='#166534' stroke-width='3' fill='none' stroke-linecap='round'/><circle cx='22' cy='36' r='2' fill='#16a34a'/><circle cx='42' cy='36' r='2' fill='#16a34a'/>`),
+COW:S(`<path d='M12 22 4 14 20 16ZM52 22 60 14 44 16Z' fill='#cbd5e1'/><rect x='12' y='14' width='40' height='38' rx='16' fill='#fff' stroke='#cbd5e1' stroke-width='2'/><path d='M12 24Q12 14 26 14 20 26 12 28Z' fill='#334155'/><ellipse cx='32' cy='44' rx='16' ry='11' fill='#fda4af'/><circle cx='26' cy='44' r='2.2' fill='#9f1239'/><circle cx='38' cy='44' r='2.2' fill='#9f1239'/><circle cx='23' cy='30' r='3' fill='#1e293b'/><circle cx='41' cy='30' r='3' fill='#1e293b'/>`),
+HEN:S(`<path d='M24 14Q24 4 29 8 32 2 36 8 41 4 40 14Z' fill='#ef4444'/><circle cx='32' cy='32' r='22' fill='#fff' stroke='#e2e8f0' stroke-width='2'/><path d='M26 38h12l-6 8Z' fill='#f59e0b'/><path d='M30 46h4l-2 7Z' fill='#ef4444'/><circle cx='23' cy='29' r='3' fill='#1e293b'/><circle cx='41' cy='29' r='3' fill='#1e293b'/>`),
+BUG:S(`<path d='M26 8 22 2M38 8 42 2' stroke='#1e293b' stroke-width='2.5' stroke-linecap='round'/><circle cx='32' cy='36' r='22' fill='#ef4444'/><path d='M32 14V58' stroke='#1e293b' stroke-width='3'/><circle cx='32' cy='14' r='9' fill='#1e293b'/><circle cx='22' cy='34' r='4' fill='#1e293b'/><circle cx='42' cy='34' r='4' fill='#1e293b'/><circle cx='24' cy='46' r='3.5' fill='#1e293b'/><circle cx='40' cy='46' r='3.5' fill='#1e293b'/>`),
+BIRD:S(`<path d='M8 34Q0 30 2 46 14 44 20 38Z' fill='#2563eb'/><ellipse cx='30' cy='36' rx='22' ry='18' fill='#60a5fa'/><circle cx='42' cy='24' r='12' fill='#60a5fa'/><path d='M52 22 62 26 52 30Z' fill='#f59e0b'/><circle cx='44' cy='22' r='2.8' fill='#1e293b'/><path d='M22 34Q34 28 40 40 32 50 22 44Z' fill='#bfdbfe'/>`),
+LION:S(`<circle cx='32' cy='32' r='28' fill='#f59e0b'/><circle cx='20' cy='20' r='5' fill='#fcd34d'/><circle cx='44' cy='20' r='5' fill='#fcd34d'/><circle cx='32' cy='34' r='19' fill='#fcd34d'/><circle cx='25' cy='31' r='3' fill='#1e293b'/><circle cx='39' cy='31' r='3' fill='#1e293b'/><path d='M28 38h8l-4 4Z' fill='#92400e'/><path d='M32 42Q28 48 24 45M32 42Q36 48 40 45' stroke='#92400e' stroke-width='2' fill='none' stroke-linecap='round'/>`),
+TIGER:S(`<circle cx='14' cy='16' r='7' fill='#f97316'/><circle cx='50' cy='16' r='7' fill='#f97316'/><circle cx='32' cy='34' r='24' fill='#fb923c'/><ellipse cx='32' cy='44' rx='12' ry='9' fill='#fff7ed'/><path d='M32 12v10M22 14l3 8M42 14l-3 8M10 32l9 2M54 32l-9 2' stroke='#1e293b' stroke-width='3' stroke-linecap='round'/><circle cx='23' cy='33' r='3' fill='#1e293b'/><circle cx='41' cy='33' r='3' fill='#1e293b'/><path d='M28 40h8l-4 4Z' fill='#1e293b'/>`),
+SNAKE:S(`<path d='M12 52H38A10 10 0 0 0 38 32H26A10 10 0 0 1 26 12H46' stroke='#22c55e' stroke-width='9' fill='none' stroke-linecap='round'/><path d='M12 52H38A10 10 0 0 0 38 32H26A10 10 0 0 1 26 12H46' stroke='#bbf7d0' stroke-width='2.5' stroke-dasharray='1 7' fill='none' stroke-linecap='round'/><circle cx='50' cy='12' r='8' fill='#16a34a'/><circle cx='52' cy='10' r='2' fill='#fff'/><path d='M57 13h6M60 13l3-2M60 13l3 2' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round'/>`),
+EGG:S(`<path d='M32 6Q10 20 10 38A22 22 0 0 0 54 38Q54 20 32 6Z' fill='#fde68a' stroke='#fbbf24' stroke-width='2'/><path d='M20 36Q20 28 26 22' stroke='#fff' stroke-width='4' fill='none' stroke-linecap='round'/>`),
+CAKE:S(`<rect x='8' y='38' width='48' height='18' rx='4' fill='#d97706'/><rect x='8' y='26' width='48' height='16' rx='4' fill='#fb7185'/><path d='M8 36Q14 46 20 36 26 46 32 36 38 46 44 36 50 46 56 36V30H8Z' fill='#fff'/><rect x='30' y='14' width='4' height='12' fill='#38bdf8'/><ellipse cx='32' cy='9' rx='3' ry='5' fill='#fbbf24'/>`),
+BANANA:S(`<path d='M10 14Q8 50 40 56Q58 56 60 44 40 50 24 38 18 28 18 14Z' fill='#fde047'/><path d='M10 14H18' stroke='#78350f' stroke-width='5' stroke-linecap='round'/><path d='M18 14Q20 30 36 42' stroke='#eab308' stroke-width='2' fill='none'/>`),
+MOON:S(`<path transform='translate(4 6) scale(2.2)' d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z' fill='#fcd34d'/><circle cx='50' cy='14' r='2.5' fill='#fbbf24'/><circle cx='56' cy='26' r='1.8' fill='#fbbf24'/>`),
+STAR:S(`<path d='M32 5 40 24 60 25 44 38 50 58 32 46 14 58 20 38 4 25 24 24Z' fill='#fbbf24' stroke='#f59e0b' stroke-width='2' stroke-linejoin='round'/>`),
+TREE:S(`<rect x='28' y='38' width='8' height='20' rx='2' fill='#92400e'/><circle cx='32' cy='24' r='18' fill='#22c55e'/><circle cx='20' cy='34' r='12' fill='#16a34a'/><circle cx='44' cy='34' r='12' fill='#16a34a'/><circle cx='32' cy='22' r='13' fill='#4ade80'/>`),
+LEG:S(`<rect x='24' y='4' width='16' height='38' rx='6' fill='#fcd9a0'/><path d='M22 38H42V46H54Q60 48 60 54V58H18V46Z' fill='#6366f1'/><rect x='18' y='54' width='42' height='4' fill='#e0e7ff'/>`),
+HAND:S(`<g fill='#fcd9a0' stroke='#e8a46a' stroke-width='1.5'><rect x='18' y='26' width='28' height='28' rx='10'/><rect x='18' y='8' width='7' height='26' rx='3.5'/><rect x='27' y='4' width='7' height='30' rx='3.5'/><rect x='36' y='8' width='7' height='26' rx='3.5'/><rect x='45' y='14' width='7' height='24' rx='3.5'/><rect x='8' y='30' width='7' height='20' rx='3.5' transform='rotate(-30 11 40)'/></g>`),
+NOSE:S(`<path d='M32 6Q30 30 22 42Q16 48 22 54 28 58 32 54 36 58 42 54 48 48 42 42 34 30 32 6Z' fill='#fcd9a0' stroke='#e8a46a' stroke-width='2'/><ellipse cx='25' cy='50' rx='2.5' ry='2' fill='#c2763e'/><ellipse cx='39' cy='50' rx='2.5' ry='2' fill='#c2763e'/>`),
+CUP:S(`<path d='M20 6Q16 10 20 12M28 4Q24 8 28 10M36 6Q32 10 36 12' stroke='#cbd5e1' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M44 24H50Q58 24 58 34 58 44 48 44H44' stroke='#38bdf8' stroke-width='5' fill='none'/><path d='M10 18H44V42Q44 58 27 58 10 58 10 42Z' fill='#38bdf8'/><rect x='10' y='18' width='34' height='6' fill='#0ea5e9'/>`),
+MAP:S(`<path d='M6 14 22 8 42 14 58 8V50L42 56 22 50 6 56Z' fill='#bbf7d0'/><path d='M6 14 22 8V50L6 56Z' fill='#86efac'/><path d='M22 8V50M42 14V56' stroke='#4ade80' stroke-width='2'/><path d='M42 40Q32 29 34 23A8 8 0 0 1 50 23Q52 29 42 40Z' fill='#ef4444'/><circle cx='42' cy='23' r='3' fill='#fff'/>`),
+KEY:S(`<circle cx='20' cy='32' r='14' fill='#fbbf24'/><circle cx='20' cy='32' r='5' fill='#fff'/><rect x='32' y='28' width='28' height='8' rx='2' fill='#fbbf24'/><rect x='46' y='36' width='6' height='10' fill='#fbbf24'/><rect x='55' y='36' width='5' height='7' fill='#fbbf24'/>`),
+BOX:S(`<path d='M8 20 32 10 56 20V46L32 56 8 46Z' fill='#d6a76b'/><path d='M32 30 56 20V46L32 56Z' fill='#c28f55'/><path d='M8 20 32 30 56 20M32 30V56' stroke='#b9824a' stroke-width='2' fill='none'/><path d='M20 15 44 25' stroke='#fde68a' stroke-width='5'/>`),
+BOOK:S(`<path d='M6 12Q20 8 32 14 44 8 58 12V52Q44 48 32 54 20 48 6 52Z' fill='#fff' stroke='#6366f1' stroke-width='3' stroke-linejoin='round'/><path d='M32 14V54' stroke='#6366f1' stroke-width='3'/><path d='M12 22Q20 20 26 24M12 30Q20 28 26 32M38 24Q44 20 52 22M38 32Q44 28 52 30' stroke='#c7d2fe' stroke-width='2.5' fill='none' stroke-linecap='round'/>`),
+CAR:S(`<path d='M6 38 12 26Q14 22 20 22H44Q50 22 52 26L58 38V48H6Z' fill='#ef4444'/><path d='M16 28H30V36H12ZM34 28H46L52 36H34Z' fill='#e0f2fe'/><circle cx='18' cy='48' r='7' fill='#1e293b'/><circle cx='46' cy='48' r='7' fill='#1e293b'/><circle cx='18' cy='48' r='3' fill='#cbd5e1'/><circle cx='46' cy='48' r='3' fill='#cbd5e1'/><rect x='54' y='38' width='4' height='5' fill='#fde047'/>`)
+};
+
 // Sound
 let soundOn = true, actx = null;
 function beep(f1,f2,dur,type,vol){
@@ -150,7 +235,7 @@ function beep(f1,f2,dur,type,vol){
 function toggleSound(){
  soundOn=!soundOn;
  if(!soundOn && 'speechSynthesis' in window) speechSynthesis.cancel();
- document.getElementById('soundIcon').textContent = soundOn?'🔊':'🔇';
+ document.getElementById('soundIcon').innerHTML = ic(soundOn?'volOn':'volOff');
  document.getElementById('soundLabel').textContent = soundOn?'Sound ON':'Muted';
 }
 // Prefer the most natural-sounding English voice the device offers.
@@ -170,12 +255,6 @@ function say(text,rate){
  u.rate=rate||.9; u.pitch=1.05; u.volume=1;
  speechSynthesis.speak(u);
 }
-function speakCurrentWord(praise){
- if(!('speechSynthesis' in window) || !vocabList[currentIndex]) return;
- speechSynthesis.cancel();
- if(typeof praise==='string') say(praise,.95);
- say(vocabList[currentIndex].word,.8);
-}
 
 // Unbiased shuffle (Fisher-Yates)
 function shuffle(a){
@@ -185,41 +264,45 @@ function shuffle(a){
 
 // Build holes
 // Mole: dark outlines + white eyes + light muzzle for contrast; all key details sit above y=80 (grass covers below).
-const moleSVG=`<svg viewBox="0 0 100 110" class="w-full h-full" style="filter:drop-shadow(0 3px 3px rgba(0,0,0,.35))">
-<g stroke="#3e2415" stroke-width="3" stroke-linejoin="round">
-<circle cx="17" cy="20" r="10" fill="#8a5a3c"/><circle cx="83" cy="20" r="10" fill="#8a5a3c"/>
-<path d="M10 108 C4 46 20 8 50 8 C80 8 96 46 90 108Z" fill="#8a5a3c"/></g>
-<circle cx="17" cy="20" r="5" fill="#f4a0b0"/><circle cx="83" cy="20" r="5" fill="#f4a0b0"/>
-<path d="M20 30 Q50 14 80 30" stroke="#a87650" stroke-width="3" fill="none" stroke-linecap="round"/>
-<ellipse cx="50" cy="42" rx="23" ry="16" fill="#ecd0ac" stroke="#3e2415" stroke-width="2"/>
-<g stroke="#3e2415" stroke-width="2"><circle cx="36" cy="28" r="8.5" fill="#fff"/><circle cx="64" cy="28" r="8.5" fill="#fff"/></g>
+const moleSVG=`<svg viewBox="0 0 100 110" class="w-full h-full" style="filter:drop-shadow(0 3px 3px rgba(0,0,0,.3))">
+<g stroke="#6b4a3a" stroke-width="3" stroke-linejoin="round">
+<circle cx="17" cy="20" r="10" fill="#9a6a4c"/><circle cx="83" cy="20" r="10" fill="#9a6a4c"/>
+<path d="M10 108 C4 46 20 8 50 8 C80 8 96 46 90 108Z" fill="#9a6a4c"/></g>
+<circle cx="17" cy="20" r="5" fill="#f2bfa6"/><circle cx="83" cy="20" r="5" fill="#f2bfa6"/>
+<path d="M20 30 Q50 14 80 30" stroke="#b88660" stroke-width="3" fill="none" stroke-linecap="round"/>
+<ellipse cx="50" cy="42" rx="23" ry="16" fill="#f6dfc2" stroke="#6b4a3a" stroke-width="2"/>
+<g stroke="#6b4a3a" stroke-width="2"><circle cx="36" cy="28" r="8.5" fill="#fff"/><circle cx="64" cy="28" r="8.5" fill="#fff"/></g>
 <circle cx="37" cy="29" r="5.2" fill="#1d1d2b"/><circle cx="63" cy="29" r="5.2" fill="#1d1d2b"/>
 <circle cx="39" cy="26.5" r="2" fill="#fff"/><circle cx="65" cy="26.5" r="2" fill="#fff"/>
-<ellipse cx="29" cy="43" rx="5" ry="3" fill="#ff8fab" opacity=".85"/><ellipse cx="71" cy="43" rx="5" ry="3" fill="#ff8fab" opacity=".85"/>
-<ellipse cx="50" cy="38" rx="7.5" ry="5.2" fill="#ff5d8a" stroke="#a8244a" stroke-width="1.8"/><ellipse cx="48" cy="36.5" rx="2.5" ry="1.4" fill="#fff" opacity=".8"/>
-<path d="M43 45 Q50 52 57 45" stroke="#3e2415" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-<g stroke="#3e2415" stroke-width="1.4" stroke-linecap="round"><path d="M30 38 L14 34"/><path d="M30 42 L14 44"/><path d="M70 38 L86 34"/><path d="M70 42 L86 44"/></g>
-<g stroke="#3e2415" stroke-width="2"><ellipse cx="21" cy="70" rx="9" ry="7" fill="#ecd0ac"/><ellipse cx="79" cy="70" rx="9" ry="7" fill="#ecd0ac"/></g>
-<g stroke="#3e2415" stroke-width="1.3" stroke-linecap="round"><path d="M15 66 L15 62"/><path d="M21 64 L21 60"/><path d="M27 66 L27 62"/><path d="M73 66 L73 62"/><path d="M79 64 L79 60"/><path d="M85 66 L85 62"/></g></svg>`;
-let html="";
-for(let i=0;i<6;i++){
- html+=`<div class="hole-container relative w-full h-full flex items-end justify-center">
- <div class="absolute bottom-0 w-full h-4/5"><svg viewBox="0 0 120 90" class="w-full h-full drop-shadow-lg"><ellipse cx="60" cy="46" rx="57" ry="36" fill="#a9743f"/><ellipse cx="60" cy="45" rx="52" ry="32" fill="#3d2314"/><ellipse cx="60" cy="42" rx="46" ry="26" fill="#26140a"/></svg></div>
- <div class="mole-wrapper absolute bottom-2 w-4/5 h-4/5 flex items-end justify-center">
-  <div class="w-full h-full relative flex items-center justify-center"><div class="art w-full h-full">${moleSVG}</div>
-   <div class="badge absolute left-1/2 -translate-x-1/2 top-[47%] w-[46%] h-[26%] bg-white border-[3px] border-amber-400 rounded-2xl shadow-lg flex items-center justify-center"><span class="mole-char font-black" style="color:#c2255c;font-size:clamp(1.1rem,5.5vw,2.1rem);line-height:1">A</span></div>
-  </div></div>
- <div class="absolute bottom-0 w-full h-[22%] pointer-events-none z-20"><svg viewBox="0 0 120 45" preserveAspectRatio="none" class="w-full h-full"><path d="M0 25C20 5,40 40,60 20C80 0,100 35,120 20L120 45L0 45Z" fill="#70e000"/><path d="M0 30C25 15,45 42,65 25C85 10,105 38,120 28L120 45L0 45Z" fill="#38b000"/></svg></div>
- </div>`;
-}
-document.getElementById("gridContainer").innerHTML=html;
+<ellipse cx="29" cy="43" rx="5.5" ry="3.3" fill="#ff9fb8" opacity=".9"/><ellipse cx="71" cy="43" rx="5.5" ry="3.3" fill="#ff9fb8" opacity=".9"/>
+<ellipse cx="50" cy="38" rx="7.5" ry="5.2" fill="#6b4a3a" stroke="#4a2f22" stroke-width="1.8"/><ellipse cx="48" cy="36.5" rx="2.5" ry="1.4" fill="#fff" opacity=".8"/>
+<path d="M43 45 Q50 52 57 45" stroke="#6b4a3a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+<g stroke="#6b4a3a" stroke-width="1.4" stroke-linecap="round"><path d="M30 38 L14 34"/><path d="M30 42 L14 44"/><path d="M70 38 L86 34"/><path d="M70 42 L86 44"/></g>
+<g stroke="#6b4a3a" stroke-width="2"><ellipse cx="21" cy="70" rx="9" ry="7" fill="#f6dfc2"/><ellipse cx="79" cy="70" rx="9" ry="7" fill="#f6dfc2"/></g>
+<g stroke="#6b4a3a" stroke-width="1.3" stroke-linecap="round"><path d="M15 66 L15 62"/><path d="M21 64 L21 60"/><path d="M27 66 L27 62"/><path d="M73 66 L73 62"/><path d="M79 64 L79 60"/><path d="M85 66 L85 62"/></g></svg>`;
+const holeHTML=`<div class="hole-container"><div class="pit"><svg viewBox="0 0 120 90"><ellipse cx="60" cy="46" rx="57" ry="36" fill="#e9d5ff"/><ellipse cx="60" cy="45" rx="52" ry="32" fill="#8b6b9e"/><ellipse cx="60" cy="42" rx="46" ry="26" fill="#4a3560"/></svg></div><div class="mole-wrapper"><div class="mw-in"><div class="art">${moleSVG}</div><div class="badge"><span class="mole-char" style="font-size:clamp(1.1rem,5.5vw,2.1rem);line-height:1;font-weight:700">A</span></div></div></div><div class="grass"><svg viewBox="0 0 120 45" preserveAspectRatio="none"><path d="M0 25C20 5,40 40,60 20C80 0,100 35,120 20L120 45L0 45Z" fill="#b9f0d0"/><path d="M0 30C25 15,45 42,65 25C85 10,105 38,120 28L120 45L0 45Z" fill="#86e3b3"/></svg></div></div>`;
+
 
 // State
 let vocabList=[], currentIndex=0, score=0, timeLeft=30, combo=0, totalHits=0, correctHits=0;
-let timerInterval=null, cycleTimer=null, hideTimer=null, running=false;
+let timerInterval=null, cycleTimer=null, hideTimer=null, nextTimer=null, running=false, locked=false;
 const $=id=>document.getElementById(id);
-const holes=[...document.querySelectorAll(".hole-container")];
-const wrappers=[...document.querySelectorAll(".mole-wrapper")];
+let holes=[], wrappers=[];
+// Difficulty: grid size, how many creatures pop up per round, how often a special joins, timings (ms)
+const LEVELS={
+ easy:{cols:3,counts:[1,1,2],sp:.15,show:1900,cyc:2300},
+ medium:{cols:4,counts:[1,2,2,3],sp:.25,show:1700,cyc:2050},
+ hard:{cols:5,counts:[2,3,3,4],sp:.35,show:1500,cyc:1800}
+};
+let level="easy";
+function buildGrid(){
+ const g=$("gridContainer"), n=LEVELS[level].cols*3;
+ g.style.setProperty("--c",LEVELS[level].cols);
+ g.innerHTML=holeHTML.repeat(n);
+ holes=[...g.querySelectorAll(".hole-container")];
+ wrappers=[...g.querySelectorAll(".mole-wrapper")];
+ bindHoles();
+}
 
 function cur(){return vocabList[currentIndex];}
 
@@ -227,27 +310,36 @@ function cur(){return vocabList[currentIndex];}
 let duration=30, playerName="";
 function lsGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
 function lsSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
-function getBoard(t){try{const a=JSON.parse(lsGet("moleBoard"+t));return Array.isArray(a)?a:[];}catch(e){return [];}}
+function boardKey(){return "moleBoard"+duration+"_"+level;}
+function getBoard(){try{const a=JSON.parse(lsGet(boardKey()));return Array.isArray(a)?a:[];}catch(e){return [];}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function showBest(hi){   // hi = row of the game just played, to highlight
- const b=getBoard(duration), medals=["🥇","🥈","🥉","4.","5."];
- $("board").innerHTML=b.length?b.map((e,i)=>`<li class="flex justify-between${i===hi?" text-amber-600 bg-amber-100 rounded-lg px-1":""}"><span>${medals[i]} ${esc(e.name)}</span><span>${e.score}</span></li>`).join(""):`<li class="text-center text-gray-400">No scores yet for ${duration}s</li>`;
+ const b=getBoard(), medals=[ic("m1"),ic("m2"),ic("m3"),"4.","5."];
+ $("board").innerHTML=b.length?b.map((e,i)=>`<li class="row${i===hi?" hi":""}"><span>${medals[i]} ${esc(e.name)}</span><span>${e.score}</span></li>`).join(""):`<li class="empty">No scores yet for ${duration}s · ${level}</li>`;
 }
 function setMode(t){
  duration=t;
- document.querySelectorAll(".mode-btn").forEach(b=>b.classList.toggle("sel",+b.dataset.t===t));
+ document.querySelectorAll(".mode-btn[data-t]").forEach(b=>b.classList.toggle("sel",+b.dataset.t===t));
  lsSet("moleMode",t); showBest();
 }
-document.querySelectorAll(".mode-btn").forEach(b=>b.addEventListener("click",()=>setMode(+b.dataset.t)));
+document.querySelectorAll(".mode-btn[data-t]").forEach(b=>b.addEventListener("click",()=>setMode(+b.dataset.t)));
+function setLevel(l){
+ level=l;
+ document.querySelectorAll(".mode-btn[data-l]").forEach(b=>b.classList.toggle("sel",b.dataset.l===l));
+ lsSet("moleLevel",l); buildGrid(); showBest();
+}
+document.querySelectorAll(".mode-btn[data-l]").forEach(b=>b.addEventListener("click",()=>setLevel(b.dataset.l)));
 $("playerName").value=lsGet("moleName")||"";
 const savedMode=+lsGet("moleMode");
 setMode([30,45,60].includes(savedMode)?savedMode:30);
+setLevel(LEVELS[lsGet("moleLevel")]?lsGet("moleLevel"):"easy");
 
 function startGame(){
  playerName=($("playerName").value||"").trim()||"Player";
  lsSet("moleName",playerName);
  $("gameModal").classList.add("hidden");
- score=0; timeLeft=duration; combo=0;
+ score=0; timeLeft=duration; combo=0; locked=false;
+ clearTimeout(nextTimer);
  Object.keys(fx).forEach(k=>fx[k]=0);
  clearInterval(fxTimer); fxTimer=setInterval(renderFx,200); renderFx(); totalHits=0; correctHits=0; running=true;
  $("score").textContent=0; $("timer").textContent=timeLeft; $("comboBadge").classList.add("hidden");
@@ -262,16 +354,14 @@ function startGame(){
  scheduleCycle(400);
 }
 
-function loadLevel(praise){
+function loadLevel(){
  if(currentIndex>=vocabList.length){vocabList=shuffle([...vocabDatabase]); currentIndex=0;}
  const w=cur();
  $("wordDisplay").textContent=w.display;
- $("hintEmoji").textContent=w.emoji;
- $("phoneticHint").textContent="Hint: "+w.hint;
- $("categoryName").textContent=w.category.toUpperCase();
- $("categoryIcon").textContent=w.icon;
- const card=$("targetCard");
- card.classList.add("animate-bounce"); setTimeout(()=>card.classList.remove("animate-bounce"),400);
+ $("hintEmoji").innerHTML=ICONS[w.word]||w.emoji;
+ // calm fade instead of bouncing the whole card
+ const wd=$("wordDisplay"); wd.style.transition="none"; wd.style.opacity=.3;
+ requestAnimationFrame(()=>{wd.style.transition="opacity .25s"; wd.style.opacity=1;});
 }
 
 function hideAll(){holes.forEach(h=>h.classList.remove("up"));}
@@ -287,30 +377,30 @@ function scheduleCycle(delay){
 const fx={freeze:0,slow:0,fast:0,x2:0};   // end timestamps of active effects
 let fxTimer=null;
 const SPECIALS={
- super:{color:'#f08c00',label:'⭐',svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #ffd43b)'><g stroke='#7a4a00' stroke-width='3' stroke-linejoin='round'><ellipse cx='32' cy='18' rx='9' ry='17' fill='#fcc419'/><ellipse cx='68' cy='18' rx='9' ry='17' fill='#fcc419'/><path d='M10 108 C4 52 20 20 50 20 C80 20 96 52 90 108Z' fill='#fcc419'/></g><ellipse cx='32' cy='18' rx='4' ry='11' fill='#ffa8c4'/><ellipse cx='68' cy='18' rx='4' ry='11' fill='#ffa8c4'/><ellipse cx='50' cy='40' rx='23' ry='17' fill='#fff3bf' stroke='#7a4a00' stroke-width='2'/><polygon points='50,21 52,26 57.5,26.3 53.2,29.6 54.8,35 50,32 45.2,35 46.8,29.6 42.5,26.3 48,26' fill='#ff6b6b' stroke='#7a4a00' stroke-width='1.2'/><g stroke='#7a4a00' stroke-width='2'><circle cx='38' cy='43' r='6.5' fill='#fff'/><circle cx='62' cy='43' r='6.5' fill='#fff'/></g><circle cx='39' cy='44' r='4' fill='#1d1d2b'/><circle cx='61' cy='44' r='4' fill='#1d1d2b'/><circle cx='40.5' cy='42.5' r='1.6' fill='#fff'/><circle cx='62.5' cy='42.5' r='1.6' fill='#fff'/><ellipse cx='50' cy='50' rx='3.5' ry='2.5' fill='#ff6b8a'/><path d='M45 53 Q50 57 55 53' stroke='#7a4a00' stroke-width='2' fill='none' stroke-linecap='round'/><ellipse cx='28' cy='50' rx='4' ry='2.5' fill='#ff8fab' opacity='.85'/><ellipse cx='72' cy='50' rx='4' ry='2.5' fill='#ff8fab' opacity='.85'/><g stroke='#7a4a00' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#fff3bf'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#fff3bf'/></g></svg>`},
- freeze:{color:'#1c7ed6',label:'❄️',svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #74c0fc)'><path d='M10 108 C4 52 20 14 50 14 C80 14 96 52 90 108Z' fill='#228be6' stroke='#0b3d6e' stroke-width='3'/><path d='M50 24 C70 24 77 42 72 54 C66 62 34 62 28 54 C23 42 30 24 50 24Z' fill='#fff' stroke='#0b3d6e' stroke-width='2'/><g stroke='#0b3d6e' stroke-width='2.5'><path d='M31 26 C32 8 68 8 69 26Z' fill='#a5d8ff'/><rect x='29' y='24' width='42' height='6' rx='3' fill='#4dabf7'/><circle cx='50' cy='8' r='4.5' fill='#fff'/></g><circle cx='39' cy='40' r='4.5' fill='#1d1d2b'/><circle cx='61' cy='40' r='4.5' fill='#1d1d2b'/><circle cx='40.5' cy='38.5' r='1.6' fill='#fff'/><circle cx='62.5' cy='38.5' r='1.6' fill='#fff'/><polygon points='44,45 56,45 50,53' fill='#ff922b' stroke='#c2570c' stroke-width='1.5' stroke-linejoin='round'/><ellipse cx='31' cy='48' rx='4' ry='2.5' fill='#ffa8c4' opacity='.8'/><ellipse cx='69' cy='48' rx='4' ry='2.5' fill='#ffa8c4' opacity='.8'/><g stroke='#0b3d6e' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#1971c2'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#1971c2'/></g></svg>`},
- slow:{color:'#2f9e44',label:'🐢',svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #8ce99a)'><path d='M8 108 C4 48 24 14 50 14 C76 14 96 48 92 108Z' fill='#37b24d' stroke='#1b5e20' stroke-width='3'/><g fill='#51cf66' stroke='#1b5e20' stroke-width='1.5'><ellipse cx='22' cy='42' rx='8' ry='11'/><ellipse cx='78' cy='42' rx='8' ry='11'/><ellipse cx='50' cy='20' rx='9' ry='5'/></g><ellipse cx='50' cy='42' rx='22' ry='16' fill='#c0eb75' stroke='#1b5e20' stroke-width='2'/><g stroke='#1b5e20' stroke-width='2'><circle cx='40' cy='38' r='6' fill='#fff'/><circle cx='60' cy='38' r='6' fill='#fff'/></g><circle cx='40.5' cy='40' r='3.6' fill='#1d1d2b'/><circle cx='60.5' cy='40' r='3.6' fill='#1d1d2b'/><circle cx='42' cy='38.5' r='1.3' fill='#fff'/><circle cx='62' cy='38.5' r='1.3' fill='#fff'/><path d='M33 36 Q40 29 47 36 M53 36 Q60 29 67 36' stroke='#1b5e20' stroke-width='2.2' fill='none' stroke-linecap='round'/><circle cx='47' cy='47' r='1.2' fill='#2f9e44'/><circle cx='53' cy='47' r='1.2' fill='#2f9e44'/><path d='M44 51 Q50 55 56 51' stroke='#1b5e20' stroke-width='2' fill='none' stroke-linecap='round'/><g stroke='#1b5e20' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#94d82d'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#94d82d'/></g></svg>`},
- bad:{color:'#7048e8',label:'🦇',svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #7048e8)'><g stroke='#2b0f66' stroke-width='3' stroke-linejoin='round'><polygon points='16,46 6,6 42,26' fill='#5f3dc4'/><polygon points='84,46 94,6 58,26' fill='#5f3dc4'/><path d='M10 108 C4 52 20 18 50 18 C80 18 96 52 90 108Z' fill='#7048e8'/></g><ellipse cx='50' cy='42' rx='22' ry='16' fill='#b197fc' stroke='#2b0f66' stroke-width='2'/><g stroke='#2b0f66' stroke-width='2'><circle cx='39' cy='40' r='6.5' fill='#fff'/><circle cx='61' cy='40' r='6.5' fill='#fff'/></g><circle cx='40' cy='41' r='4' fill='#e03131'/><circle cx='60' cy='41' r='4' fill='#e03131'/><circle cx='41.3' cy='39.8' r='1.3' fill='#fff'/><circle cx='61.3' cy='39.8' r='1.3' fill='#fff'/><path d='M30 30 L46 36 M70 30 L54 36' stroke='#2b0f66' stroke-width='3.2' stroke-linecap='round'/><ellipse cx='50' cy='47' rx='3' ry='2' fill='#2b0f66'/><path d='M40 50 Q50 58 60 50' stroke='#2b0f66' stroke-width='2.2' fill='none' stroke-linecap='round'/><g fill='#fff' stroke='#2b0f66' stroke-width='1'><polygon points='43,51 47,52.5 44.5,57'/><polygon points='57,51 53,52.5 55.5,57'/></g><g stroke='#2b0f66' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#b197fc'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#b197fc'/></g></svg>`}
+ super:{color:'#f08c00',label:ic('star'),svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #ffd43b)'><g stroke='#7a4a00' stroke-width='3' stroke-linejoin='round'><ellipse cx='32' cy='18' rx='9' ry='17' fill='#fcc419'/><ellipse cx='68' cy='18' rx='9' ry='17' fill='#fcc419'/><path d='M10 108 C4 52 20 20 50 20 C80 20 96 52 90 108Z' fill='#fcc419'/></g><ellipse cx='32' cy='18' rx='4' ry='11' fill='#f5b895'/><ellipse cx='68' cy='18' rx='4' ry='11' fill='#f5b895'/><ellipse cx='50' cy='40' rx='23' ry='17' fill='#fff3bf' stroke='#7a4a00' stroke-width='2'/><polygon points='50,21 52,26 57.5,26.3 53.2,29.6 54.8,35 50,32 45.2,35 46.8,29.6 42.5,26.3 48,26' fill='#ff6b6b' stroke='#7a4a00' stroke-width='1.2'/><g stroke='#7a4a00' stroke-width='2'><circle cx='38' cy='43' r='6.5' fill='#fff'/><circle cx='62' cy='43' r='6.5' fill='#fff'/></g><circle cx='39' cy='44' r='4' fill='#1d1d2b'/><circle cx='61' cy='44' r='4' fill='#1d1d2b'/><circle cx='40.5' cy='42.5' r='1.6' fill='#fff'/><circle cx='62.5' cy='42.5' r='1.6' fill='#fff'/><ellipse cx='50' cy='50' rx='3.5' ry='2.5' fill='#e8956a'/><path d='M45 53 Q50 57 55 53' stroke='#7a4a00' stroke-width='2' fill='none' stroke-linecap='round'/><ellipse cx='28' cy='50' rx='4' ry='2.5' fill='#f5b895' opacity='.85'/><ellipse cx='72' cy='50' rx='4' ry='2.5' fill='#f5b895' opacity='.85'/><g stroke='#7a4a00' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#fff3bf'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#fff3bf'/></g></svg>`},
+ freeze:{color:'#1c7ed6',label:ic('snow'),svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #74c0fc)'><path d='M10 108 C4 52 20 14 50 14 C80 14 96 52 90 108Z' fill='#228be6' stroke='#0b3d6e' stroke-width='3'/><path d='M50 24 C70 24 77 42 72 54 C66 62 34 62 28 54 C23 42 30 24 50 24Z' fill='#fff' stroke='#0b3d6e' stroke-width='2'/><g stroke='#0b3d6e' stroke-width='2.5'><path d='M31 26 C32 8 68 8 69 26Z' fill='#a5d8ff'/><rect x='29' y='24' width='42' height='6' rx='3' fill='#4dabf7'/><circle cx='50' cy='8' r='4.5' fill='#fff'/></g><circle cx='39' cy='40' r='4.5' fill='#1d1d2b'/><circle cx='61' cy='40' r='4.5' fill='#1d1d2b'/><circle cx='40.5' cy='38.5' r='1.6' fill='#fff'/><circle cx='62.5' cy='38.5' r='1.6' fill='#fff'/><polygon points='44,45 56,45 50,53' fill='#ff922b' stroke='#c2570c' stroke-width='1.5' stroke-linejoin='round'/><ellipse cx='31' cy='48' rx='4' ry='2.5' fill='#f5b895' opacity='.8'/><ellipse cx='69' cy='48' rx='4' ry='2.5' fill='#f5b895' opacity='.8'/><g stroke='#0b3d6e' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#1971c2'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#1971c2'/></g></svg>`},
+ slow:{color:'#2f9e44',label:ic('turtle'),svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #8ce99a)'><path d='M8 108 C4 48 24 14 50 14 C76 14 96 48 92 108Z' fill='#37b24d' stroke='#1b5e20' stroke-width='3'/><g fill='#51cf66' stroke='#1b5e20' stroke-width='1.5'><ellipse cx='22' cy='42' rx='8' ry='11'/><ellipse cx='78' cy='42' rx='8' ry='11'/><ellipse cx='50' cy='20' rx='9' ry='5'/></g><ellipse cx='50' cy='42' rx='22' ry='16' fill='#c0eb75' stroke='#1b5e20' stroke-width='2'/><g stroke='#1b5e20' stroke-width='2'><circle cx='40' cy='38' r='6' fill='#fff'/><circle cx='60' cy='38' r='6' fill='#fff'/></g><circle cx='40.5' cy='40' r='3.6' fill='#1d1d2b'/><circle cx='60.5' cy='40' r='3.6' fill='#1d1d2b'/><circle cx='42' cy='38.5' r='1.3' fill='#fff'/><circle cx='62' cy='38.5' r='1.3' fill='#fff'/><path d='M33 36 Q40 29 47 36 M53 36 Q60 29 67 36' stroke='#1b5e20' stroke-width='2.2' fill='none' stroke-linecap='round'/><circle cx='47' cy='47' r='1.2' fill='#2f9e44'/><circle cx='53' cy='47' r='1.2' fill='#2f9e44'/><path d='M44 51 Q50 55 56 51' stroke='#1b5e20' stroke-width='2' fill='none' stroke-linecap='round'/><g stroke='#1b5e20' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#94d82d'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#94d82d'/></g></svg>`},
+ bad:{color:'#7048e8',label:ic('bat'),svg:`<svg viewBox='0 0 100 110' class='w-full h-full' style='filter:drop-shadow(0 0 7px #7048e8)'><g stroke='#2b0f66' stroke-width='3' stroke-linejoin='round'><polygon points='16,46 6,6 42,26' fill='#5f3dc4'/><polygon points='84,46 94,6 58,26' fill='#5f3dc4'/><path d='M10 108 C4 52 20 18 50 18 C80 18 96 52 90 108Z' fill='#7048e8'/></g><ellipse cx='50' cy='42' rx='22' ry='16' fill='#b197fc' stroke='#2b0f66' stroke-width='2'/><g stroke='#2b0f66' stroke-width='2'><circle cx='39' cy='40' r='6.5' fill='#fff'/><circle cx='61' cy='40' r='6.5' fill='#fff'/></g><circle cx='40' cy='41' r='4' fill='#e03131'/><circle cx='60' cy='41' r='4' fill='#e03131'/><circle cx='41.3' cy='39.8' r='1.3' fill='#fff'/><circle cx='61.3' cy='39.8' r='1.3' fill='#fff'/><path d='M30 30 L46 36 M70 30 L54 36' stroke='#2b0f66' stroke-width='3.2' stroke-linecap='round'/><ellipse cx='50' cy='47' rx='3' ry='2' fill='#2b0f66'/><path d='M40 50 Q50 58 60 50' stroke='#2b0f66' stroke-width='2.2' fill='none' stroke-linecap='round'/><g fill='#fff' stroke='#2b0f66' stroke-width='1'><polygon points='43,51 47,52.5 44.5,57'/><polygon points='57,51 53,52.5 55.5,57'/></g><g stroke='#2b0f66' stroke-width='2'><ellipse cx='21' cy='70' rx='9' ry='7' fill='#b197fc'/><ellipse cx='79' cy='70' rx='9' ry='7' fill='#b197fc'/></g></svg>`}
 };
 function pickSpecial(){const r=Math.random(); return r<.25?'super':r<.45?'freeze':r<.7?'slow':'bad';}
 function speedFactor(){const n=Date.now(); return (n<fx.slow?1.6:1)*(n<fx.fast?.6:1);}   // >1 = slower
 function comboMult(){return Math.min(3,1+Math.floor(combo/3)*.5);}   // x1 → x1.5 (3) → x2 (6) → … max x3 (12)
 function renderFx(){
  const n=Date.now();
- const L=[['freeze','❄️ FROZEN','#bae6fd','#075985'],['slow','🐢 SLOW','#bbf7d0','#166534'],['fast','⚡ FAST','#ddd6fe','#5b21b6'],['x2','⭐ x2','#fde68a','#92400e']];
- $('effects').innerHTML=L.filter(e=>n<fx[e[0]]).map(e=>`<span style='background:${e[2]};color:${e[3]}' class='px-3 py-0.5 rounded-full border-2 border-white shadow'>${e[1]} ${Math.ceil((fx[e[0]]-n)/1000)}s</span>`).join('');
+ const L=[['freeze',ic('snow')+' FROZEN','#bae6fd','#075985'],['slow',ic('turtle')+' SLOW','#bbf7d0','#166534'],['fast',ic('bolt')+' FAST','#ddd6fe','#5b21b6'],['x2',ic('star')+' x2','#fde68a','#92400e']];
+ $('effects').innerHTML=L.filter(e=>n<fx[e[0]]).map(e=>`<span style='background:${e[2]};color:${e[3]}' class='chip'>${e[1]} ${Math.ceil((fx[e[0]]-n)/1000)}s</span>`).join('');
  $('frostFx').style.opacity=n<fx.freeze?1:0;
 }
 function hitSpecial(kind,x,y){
  const s=SPECIALS[kind], n=Date.now();
  spawnParticles(x,y,s.color);
- if(kind==='super'){fx.x2=n+8000; floatText('⭐ x2 points!',x,y,s.color); beep(660,1320,.3,'sine',.25);}
- else if(kind==='freeze'){fx.freeze=n+5000; floatText('❄️ Time frozen!',x,y,s.color); beep(900,500,.35,'sine',.2);}
- else if(kind==='slow'){fx.slow=n+8000; fx.fast=0; floatText('🐢 Slow-mo!',x,y,s.color); beep(300,200,.3,'sine',.2);}
+ if(kind==='super'){fx.x2=n+8000; floatText(ic('star')+' x2 points!',x,y,s.color); beep(660,1320,.3,'sine',.25);}
+ else if(kind==='freeze'){fx.freeze=n+5000; floatText(ic('snow')+' Time frozen!',x,y,s.color); beep(900,500,.35,'sine',.2);}
+ else if(kind==='slow'){fx.slow=n+8000; fx.fast=0; floatText(ic('turtle')+' Slow-mo!',x,y,s.color); beep(300,200,.3,'sine',.2);}
  else{
   fx.fast=n+6000; fx.slow=0; combo=0; $('comboBadge').classList.add('hidden');
   score=Math.max(0,score-10); $('score').textContent=score; totalHits++;
-  floatText('🦇 -10 & fast!',x,y,s.color); beep(200,90,.35,'sawtooth',.2);
+  floatText(ic('bat')+' -10, fast!',x,y,s.color); beep(200,90,.35,'sawtooth',.2);
   const c=$('targetCard'); c.classList.add('animate-shake'); setTimeout(()=>c.classList.remove('animate-shake'),400);
  }
  renderFx();
@@ -320,43 +410,44 @@ function setMole(idx,ch){
  wr.dataset.kind='mole'; wr.dataset.char=ch;
  wr.querySelector('.art').innerHTML=moleSVG;
  wr.querySelector('.badge').style.borderColor='';
- const c=wr.querySelector('.mole-char'); c.style.color='#c2255c'; c.textContent=ch;
+ const c=wr.querySelector('.mole-char'); c.style.color='#ff7eb6'; c.textContent=ch;
 }
 function setSpecial(idx,kind){
  const wr=wrappers[idx], s=SPECIALS[kind];
  wr.dataset.kind=kind; wr.dataset.char='';
  wr.querySelector('.art').innerHTML=s.svg;
  wr.querySelector('.badge').style.borderColor=s.color;
- const c=wr.querySelector('.mole-char'); c.style.color=s.color; c.textContent=s.label;
+ const c=wr.querySelector('.mole-char'); c.style.color=s.color; c.innerHTML=s.label;
 }
 function popCycle(){
  if(!running) return;
  hideAll();
- const f=speedFactor(), w=cur();
- const count=Math.random()>.65?2:1;
- const order=shuffle([0,1,2,3,4,5]);
+ const f=speedFactor(), w=cur(), L=LEVELS[level];
+ const count=L.counts[Math.floor(Math.random()*L.counts.length)];
+ const order=shuffle(Array.from({length:holes.length},(_,i)=>i));
  const dist=shuffle([...w.d]);
  const withCorrect=Math.random()<.85;
  order.slice(0,count).forEach((idx,k)=>{
   setMole(idx,(withCorrect&&k===0)?w.missing:dist[k]);
   holes[idx].classList.add('up');
  });
- if(Math.random()<.25){   // a special creature joins in (~1 cycle in 4)
+ if(Math.random()<L.sp){   // a special creature joins in
   const idx=order[count];
   setSpecial(idx,pickSpecial()); holes[idx].classList.add('up');
  }
  beep(360,720,.08,'sine',.12);
- hideTimer=setTimeout(hideAll,1300*f);
- cycleTimer=setTimeout(popCycle,1600*f);
+ hideTimer=setTimeout(hideAll,L.show*f);
+ cycleTimer=setTimeout(popCycle,L.cyc*f);
 }
 
-wrappers.forEach((wrapper,i)=>{
- wrapper.addEventListener("pointerdown",e=>{
+// The whole hole is the hit area (bigger target = snappier feel)
+function bindHoles(){holes.forEach((hole,i)=>{
+ const wrapper=wrappers[i];
+ hole.addEventListener("pointerdown",e=>{
   e.preventDefault();
-  const hole=holes[i];
-  if(!running || !hole.classList.contains("up") || wrapper.classList.contains("hit")) return;
+  if(!running || locked || !hole.classList.contains("up") || wrapper.classList.contains("hit")) return;
   wrapper.classList.add("hit");
-  setTimeout(()=>{wrapper.classList.remove("hit"); hole.classList.remove("up");},150);
+  setTimeout(()=>{wrapper.classList.remove("hit"); hole.classList.remove("up");},100);
   const kind=wrapper.dataset.kind;
   const r=wrapper.getBoundingClientRect(), x=r.left+r.width/2, y=r.top;
   if(kind&&kind!=='mole'){hitSpecial(kind,x,y); return;}
@@ -367,39 +458,49 @@ wrappers.forEach((wrapper,i)=>{
    const pts=Math.round(10*mult)*(Date.now()<fx.x2?2:1);
    score+=pts; $("score").textContent=score;
    beep(523,1046,.25,'sine',.25);
-   floatText(`+${pts} ✨`,x,y,"#ff6b6b"); spawnParticles(x,y,"#ff9a9e");
+   floatText(`+${pts} ${ic('sparkle')}`,x,y,"#16a34a"); spawnParticles(x,y,"#ffb3d4");
    $("comboCount").textContent=combo; $("comboMult").textContent="x"+mult;
    if(combo>=2) $("comboBadge").classList.remove("hidden");
-   if(combo%3===0) floatText("🔥 COMBO x"+mult+"!",x,y-34,"#f76707");
-   if('speechSynthesis' in window){speechSynthesis.cancel(); say(cur().word,.8);}
-   currentIndex++;
-   loadLevel();
-   setTimeout(hideAll,150);        // clear other moles so none keep a stale letter
-   scheduleCycle(600);
+   if(combo%3===0) floatText(ic("fire")+" COMBO x"+mult+"!",x,y-34,"#f76707");
+   // Show the completed word and read it NOW (only after a correct answer), then move on.
+   locked=true;
+   const w=cur();
+   $("wordDisplay").textContent=w.word.split("").join(" ");
+   if('speechSynthesis' in window) speechSynthesis.cancel();
+   say(w.word,.8);
+   clearTimeout(cycleTimer); clearTimeout(hideTimer);
+   setTimeout(hideAll,150);
+   clearTimeout(nextTimer);
+   nextTimer=setTimeout(()=>{
+    locked=false;
+    if(!running) return;
+    currentIndex++; loadLevel(); scheduleCycle(300);
+   },1100);
   }else{
    combo=0; $("comboBadge").classList.add("hidden");
    score=Math.max(0,score-5); $("score").textContent=score;
-   beep(300,260,.13,'square',.16); setTimeout(()=>beep(300,260,.13,'square',.16),170);   // "tè tè"
-   floatText("-5 💔",x,y,"#ff5252");
+   beep(300,260,.13,'square',.16); setTimeout(()=>beep(300,260,.13,'square',.16),170);
+   floatText("-5 "+ic("heart"),x,y,"#ff5252");
    const c=$("targetCard"); c.classList.add("animate-shake"); setTimeout(()=>c.classList.remove("animate-shake"),400);
   }
  });
-});
+});}
 
 function floatText(text,x,y,color){
  const el=document.createElement("div");
- el.className="fixed font-black text-3xl float-text z-50 drop-shadow-lg";
- el.textContent=text; el.style.left=(x-20)+"px"; el.style.top=(y-20)+"px"; el.style.color=color;
+ el.className="float-text";
+ el.innerHTML=text; el.style.left=(x-20)+"px"; el.style.top=(y-20)+"px"; el.style.color=color;
  document.body.appendChild(el); setTimeout(()=>el.remove(),850);
 }
 
-// Particles
+// Particles (the animation loop only runs while particles exist)
 const canvas=$("particleCanvas"), pctx=canvas.getContext("2d");
-let particles=[];
+let particles=[], raf=0;
 function resize(){canvas.width=innerWidth; canvas.height=innerHeight;}
 addEventListener("resize",resize); resize();
 function spawnParticles(x,y,color){
  for(let i=0;i<12;i++) particles.push({x,y,vx:(Math.random()-.5)*7,vy:(Math.random()-.5)*7-1,r:Math.random()*5+3,color,a:1});
+ if(!raf) raf=requestAnimationFrame(frame);
 }
 function frame(){
  pctx.clearRect(0,0,canvas.width,canvas.height);
@@ -411,18 +512,43 @@ function frame(){
   if(p.a<.05) particles.splice(i,1);
  }
  pctx.globalAlpha=1;
- requestAnimationFrame(frame);
+ raf=particles.length?requestAnimationFrame(frame):0;
 }
-frame();
 
-function endGame(){
- running=false;
- clearInterval(timerInterval); clearTimeout(cycleTimer); clearTimeout(hideTimer);
+// Quit to the menu without saving a score
+let quitArm=0;
+function quitGame(){
+ if(!running) return;
+ // two-tap confirm (browser confirm() is blocked in some embedded views)
+ const qb=$("quitBtn");
+ if(Date.now()>quitArm){
+  quitArm=Date.now()+2500; qb.classList.add("arm");
+  setTimeout(()=>qb.classList.remove("arm"),2500);
+  const r=qb.getBoundingClientRect();
+  floatText("Tap again to quit",Math.max(8,r.left-110),r.bottom+6,"#ff7eb6");
+  return;
+ }
+ quitArm=0; qb.classList.remove("arm");
+ running=false; locked=false;
+ clearInterval(timerInterval); clearTimeout(cycleTimer); clearTimeout(hideTimer); clearTimeout(nextTimer);
  clearInterval(fxTimer); Object.keys(fx).forEach(k=>fx[k]=0); renderFx();
  hideAll();
  if('speechSynthesis' in window) speechSynthesis.cancel();
+ $("modalTitle").textContent="Mole Spelling";
+ $("modalDesc").textContent="Whack the mole with the missing letter!";
+ $("finalStats").classList.add("hidden");
+ showBest();
+ $("gameModal").classList.remove("hidden");
+}
+addEventListener("keydown",e=>{if(e.key==="Escape") quitGame();});
+
+function endGame(){
+ running=false; locked=false;
+ clearInterval(timerInterval); clearTimeout(cycleTimer); clearTimeout(hideTimer); clearTimeout(nextTimer);
+ clearInterval(fxTimer); Object.keys(fx).forEach(k=>fx[k]=0); renderFx();
+ hideAll();
  const acc=totalHits>0?Math.round(correctHits/totalHits*100):0;
- const board=getBoard(duration);
+ const board=getBoard();
  let rank=-1;
  if(score>0){
   const entry={name:playerName,score,t:Date.now()};
@@ -431,11 +557,11 @@ function endGame(){
   rank=board.indexOf(entry);
   if(rank>=5) rank=-1;
   board.length=Math.min(board.length,5);
-  lsSet("moleBoard"+duration,JSON.stringify(board));
+  lsSet(boardKey(),JSON.stringify(board));
  }
  showBest(rank);
  $("modalTitle").textContent=(score>=Math.round(80*duration/30)?"SUPER AMAZING":"TIME’S UP")+", "+playerName+"!";
- $("modalDesc").textContent=(rank===0?"🎉 New record for "+duration+"s! ":rank>0?"🏅 You’re #"+(rank+1)+" on the board! ":"")+"Here is your spelling performance:";
+ $("modalDesc").textContent=(rank===0?"New record for "+duration+"s! ":rank>0?"You’re #"+(rank+1)+" on the board! ":"")+"Here is your spelling performance:";
  $("modalScore").textContent=score; $("modalWords").textContent=correctHits; $("modalAccuracy").textContent=acc+"%";
  $("finalStats").classList.remove("hidden");
  $("gameModal").classList.remove("hidden");
